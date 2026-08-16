@@ -1,0 +1,16 @@
+{
+  "id": "prod-002",
+  "name": "Smart Watch",
+  "category": "cat-001",
+  "price": 399,
+  "comparePrice": 449,
+  "stock": null,
+  "saleLable": "",
+  "images": [
+    "https://assets.shadcnstore.com/shadcnstore.com/stock/e-commerce/premium-wool-sweater.800w.b234d4.avif"
+  ],
+  "description": "Health and fitness companion",
+
+  "featured": true,
+  "status": "published"
+}

@@ -1,0 +1,17 @@
+{
+  "id": "prod-006",
+  "name": "Smartphone Pro",
+  "category": "cat-001",
+  "price": 999,
+  "comparePrice": 1099,
+  "stock": null,
+  "saleLable": "",
+  "images": [
+    "https://assets.shadcnstore.com/shadcnstore.com/stock/e-commerce/premium-laptop.800w.ce2dc0.avif"
+  ],
+  "description": "Pro camera system, ProMotion",
+  "variants": [],
+  "addOns": [],
+  "featured": true,
+  "status": "published"
+}

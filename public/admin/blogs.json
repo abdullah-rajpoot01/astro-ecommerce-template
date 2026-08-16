@@ -1,0 +1,101 @@
+{
+    "$schema": "https://unpkg.com/@sveltia/cms@0.170.5/schema/sveltia-cms.json",
+    "collections": [
+        {
+            "name": "blogs",
+            "label": "Blog Posts",
+            "folder": "content/blogs",
+            "create": true,
+            "slug": "{{title}}",
+            "limit": 150,
+            "format": "json",
+            "extension": "json",
+            "fields": [
+                {
+                    "name": "id",
+                    "widget": "hidden",
+                    "default": "{{uuid_short}}"
+                },
+                {
+                    "label": "Title",
+                    "name": "title",
+                    "widget": "string"
+                },
+                {
+                    "label": "Content",
+                    "name": "body",
+                    "widget": "markdown",
+                    "modes": ["rich_text"]
+                },
+                {
+                    "label": "Featured Image",
+                    "name": "featuredImage",
+                    "widget": "image",
+                    "required": false
+                },
+                {
+                    "label": "Author",
+                    "name": "author",
+                    "widget": "string",
+                    "required": false,
+                    "default": "Elite Store"
+                },
+                {
+                    "label": "Category",
+                    "name": "category",
+                    "widget": "relation",
+                    "collection": "blog-categories",
+                    "required": false,
+                    "search_fields": [
+                        "name"
+                    ],
+                    "value_field": "id",
+                    "display_fields": [
+                        "name"
+                    ],
+                    "hint": "Select a category from your categories collection"
+                },
+                {
+                    "label": "Tags",
+                    "name": "tags",
+                    "widget": "list",
+                    "required": false,
+                    "field": {
+                        "label": "Tag",
+                        "name": "tag",
+                        "widget": "string"
+                    }
+                },
+                {
+                    "label": "Published At",
+                    "name": "publishedAt",
+                    "widget": "datetime",
+                    "format": "YYYY-MM-DD"
+                },
+                {
+                    "label": "Reading Time (Minutes)",
+                    "name": "readingTime",
+                    "widget": "number",
+                    "value_type": "int",
+                    "default": 5
+                },
+                {
+                    "label": "Featured Post",
+                    "name": "featured",
+                    "widget": "boolean",
+                    "default": false
+                },
+                {
+                    "label": "Status",
+                    "name": "status",
+                    "widget": "select",
+                    "options": [
+                        "draft",
+                        "published"
+                    ],
+                    "default": "published"
+                }
+            ]
+        }
+    ]
+}

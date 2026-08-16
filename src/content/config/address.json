@@ -1,0 +1,12 @@
+{
+    "addressLine1": "Main Boulevard",
+    "addressLine2": "Gulberg III",
+    "city": "Lahore",
+    "province": "Punjab",
+    "postalCode": "54000",
+    "country": "Pakistan",
+    "location": {
+        "latitude": 31.5204,
+        "longitude": 74.3587
+    }
+}

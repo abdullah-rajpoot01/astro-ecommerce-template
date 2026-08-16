@@ -1,0 +1,15 @@
+{
+  "id": "prod-005",
+  "name": "Gaming Monitor",
+  "category": "cat-001",
+  "price": 699,
+  "comparePrice": 799,
+  "stock": null,
+  "saleLable": "",
+  "images": [
+    "https://assets.shadcnstore.com/shadcnstore.com/stock/e-commerce/dell-xps-13-plus.800w.0ef45d.avif"
+  ],
+  "description": "144Hz refresh rate display",
+  "featured": true,
+  "status": "published"
+}

@@ -1,0 +1,206 @@
+{
+    "$schema": "https://unpkg.com/@sveltia/cms@0.170.5/schema/sveltia-cms.json",
+    "collections": [
+        {
+            "name": "products",
+            "label": "Products",
+            "folder": "content/products",
+            "create": true,
+            "slug": "{{slug}}",
+            "extension": "json",
+            "format": "json",
+            "limit": 500,
+            "fields": [
+                {
+                    "name": "id",
+                    "widget": "hidden",
+                    "default": "{{uuid_short}}"
+                },
+                {
+                    "label": "Product Name",
+                    "name": "name",
+                    "widget": "string"
+                },
+                {
+                    "label": "Category",
+                    "name": "category",
+                    "widget": "relation",
+                    "collection": "categories",
+                    "search_fields": [
+                        "name"
+                    ],
+                    "value_field": "id",
+                    "display_fields": [
+                        "name"
+                    ],
+                    "hint": "Select the category this product belongs to"
+                },
+                {
+                    "label": "Base Price (PKR)",
+                    "name": "price",
+                    "widget": "number",
+                    "value_type": "int"
+                },
+                {
+                    "label": "Compare At Price (PKR)",
+                    "name": "comparePrice",
+                    "widget": "number",
+                    "value_type": "int",
+                    "required": false
+                },
+                {
+                    "label": "Stock Qty",
+                    "name": "stock",
+                    "widget": "number",
+                    "value_type": "int",
+                    "required": false
+                },
+                {
+                    "label": "Sale Label",
+                    "name": "saleLable",
+                    "widget": "string",
+                    "required": false,
+                    "hint": "e.g., Hot, Sale, New"
+                },
+                {
+                    "label": "Images",
+                    "name": "images",
+                    "widget": "list",
+                    "max": 5,
+                    "field": {
+                        "label": "Image",
+                        "name": "image",
+                        "widget": "image"
+                    }
+                },
+                {
+                    "label": "Description",
+                    "name": "description",
+                    "widget": "text",
+                    "required": false
+                },
+                {
+                    "label": "Variants",
+                    "name": "variants",
+                    "widget": "list",
+                    "required": false,
+                    "fields": [
+                        {
+                            "name": "id",
+                            "widget": "hidden",
+                            "default": "{{uuid_short}}"
+                        },
+                        {
+                            "label": "SKU",
+                            "name": "sku",
+                            "widget": "string",
+                            "required": false
+                        },
+                        {
+                            "label": "Price",
+                            "name": "price",
+                            "widget": "number",
+                            "value_type": "int",
+                            "required": false
+                        },
+                        {
+                            "label": "Compare Price",
+                            "name": "comparePrice",
+                            "widget": "number",
+                            "value_type": "int",
+                            "required": false
+                        },
+                        {
+                            "label": "Stock Qty",
+                            "name": "stock",
+                            "widget": "number",
+                            "value_type": "int",
+                            "required": false
+                        },
+                        {
+                            "label": "Options",
+                            "name": "options",
+                            "widget": "keyvalue",
+                            "min": 1,
+                            "key_label": "Option Type (e.g. Color, Size, Fabric)",
+                            "value_label": "Option Value (e.g. Red, Medium, Cotton)"
+                        }
+                    ]
+                },
+                {
+                    "label": "Add-ons",
+                    "name": "addOns",
+                    "widget": "list",
+                    "required": false,
+                    "fields": [
+                        {
+                            "name": "id",
+                            "widget": "hidden",
+                            "default": "{{uuid_short}}"
+                        },
+                        {
+                            "label": "Name",
+                            "name": "name",
+                            "widget": "string"
+                        },
+                        {
+                            "label": "Required",
+                            "name": "required",
+                            "widget": "boolean",
+                            "default": false
+                        },
+                        {
+                            "label": "Price (PKR)",
+                            "name": "price",
+                            "widget": "number",
+                            "value_type": "int"
+                        }
+                    ]
+                },
+                {
+                    "label": "Features",
+                    "name": "features",
+                    "widget": "list",
+                    "field": {
+                        "label": "Feature text",
+                        "name": "feature",
+                        "widget": "string"
+                    }
+                },
+                {
+                    "label": "Specifications",
+                    "name": "specifications",
+                    "widget": "list",
+                    "fields": [
+                        {
+                            "label": "Key",
+                            "name": "key",
+                            "widget": "string"
+                        },
+                        {
+                            "label": "Value",
+                            "name": "value",
+                            "widget": "string"
+                        }
+                    ]
+                },
+                {
+                    "label": "Featured Product",
+                    "name": "featured",
+                    "widget": "boolean",
+                    "default": false
+                },
+                {
+                    "label": "Status",
+                    "name": "status",
+                    "widget": "select",
+                    "options": [
+                        "draft",
+                        "published"
+                    ],
+                    "default": "published"
+                }
+            ]
+        }
+    ]
+}

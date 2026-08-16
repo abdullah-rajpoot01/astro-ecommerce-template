@@ -1,0 +1,26 @@
+---
+import ProductsPage from "@/components/products/products-page"
+import Layout from "@/layouts/main.astro"
+import { getAllCategories } from "@/utils/categories";
+
+// 3. Define the path map using Astro's dynamic parameters engine
+export async function getStaticPaths() {
+  // Fetch all your real products from your backend utility layer
+  const categories =  getAllCategories();
+
+  // Map over the items to generate static routes automatically
+  return categories.map((category) => {
+    return {
+      // The name of this param key must perfectly match your filename: [id].astro
+      params: { 
+        id: String(category.id) 
+      },
+    };
+  });
+}
+
+---
+
+<Layout>
+  <ProductsPage />
+</Layout>

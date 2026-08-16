@@ -1,0 +1,16 @@
+{
+  "id": "prod-001",
+  "name": "Wireless Headphones",
+  "category": "cat-001",
+  "price": 349,
+  "comparePrice": 399,
+  "stock": null,
+  "saleLable": "",
+  "images": [
+    "https://assets.shadcnstore.com/shadcnstore.com/stock/e-commerce/urban-sport-jacket.500w.5ece9e.avif"
+  ],
+  "description": "Premium noise-cancelling experience",
+  "variants": [],
+  "featured": true,
+  "status": "published"
+}

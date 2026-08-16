@@ -1,0 +1,855 @@
+{
+    "$schema": "https://unpkg.com/@sveltia/cms@0.170.5/schema/sveltia-cms.json",
+    "collections": [
+        {
+            "name": "Sections",
+            "label": "Sections",
+            "files": [
+                {
+                    "name": "header",
+                    "label": "Header",
+                    "file": "content/sections/navbar.json",
+                    "format": "json",
+                    "fields": [
+                        {
+                            "name": "settings",
+                            "label": "Visibility Toggles",
+                            "widget": "object",
+                            "fields": [
+                                {
+                                    "label": "Enabled",
+                                    "name": "enabled",
+                                    "widget": "boolean",
+                                    "default": true
+                                },
+                                {
+                                    "label": "Show Icons",
+                                    "name": "isIconVisible",
+                                    "widget": "boolean",
+                                    "default": true
+                                }
+                            ]
+                        },
+                        {
+                            "label": "Title",
+                            "name": "title",
+                            "widget": "string",
+                            "required": false
+                        },
+                        {
+                            "label": "Subtitle",
+                            "name": "subtitle",
+                            "widget": "string",
+                            "required": false
+                        },
+                        {
+                            "label": "Logo Image",
+                            "name": "image",
+                            "widget": "image",
+                            "required": false
+                        },
+                        {
+                            "label": "Quick Links",
+                            "name": "quickLinks",
+                            "widget": "list",
+                            "max": 7,
+                            "fields": [
+                                {
+                                    "label": "Label",
+                                    "name": "label",
+                                    "widget": "string"
+                                },
+                                {
+                                    "label": "URL",
+                                    "name": "url",
+                                    "widget": "string"
+                                },
+                                {
+                                    "label": "Icon",
+                                    "name": "icon",
+                                    "widget": "select",
+                                    "options": [
+                                        "home",
+                                        "shoppingBag",
+                                        "shoppingCart",
+                                        "store",
+                                        "user",
+                                        "users",
+                                        "userPlus",
+                                        "userCheck",
+                                        "settings",
+                                        "search",
+                                        "heart",
+                                        "star",
+                                        "mapPin",
+                                        "phone",
+                                        "mail",
+                                        "menu",
+                                        "circleHelp",
+                                        "info",
+                                        "bell",
+                                        "calendar",
+                                        "clock",
+                                        "check",
+                                        "x",
+                                        "plus",
+                                        "minus",
+                                        "chevronDown",
+                                        "chevronUp",
+                                        "chevronLeft",
+                                        "chevronRight",
+                                        "arrowRight",
+                                        "arrowLeft",
+                                        "arrowUp",
+                                        "arrowDown",
+                                        "externalLink",
+                                        "link",
+                                        "share",
+                                        "send",
+                                        "download",
+                                        "upload",
+                                        "eye",
+                                        "eyeOff",
+                                        "lock",
+                                        "unlock",
+                                        "login",
+                                        "logout",
+                                        "key",
+                                        "shield",
+                                        "shieldCheck",
+                                        "creditCard",
+                                        "wallet",
+                                        "banknote",
+                                        "receipt",
+                                        "tag",
+                                        "tags",
+                                        "package",
+                                        "truck",
+                                        "boxes",
+                                        "dollar",
+                                        "percent",
+                                        "discount",
+                                        "gift",
+                                        "camera",
+                                        "image",
+                                        "video",
+                                        "file",
+                                        "fileText",
+                                        "folder",
+                                        "folderOpen",
+                                        "edit",
+                                        "delete",
+                                        "copy",
+                                        "save",
+                                        "moreHorizontal",
+                                        "moreVertical",
+                                        "filter",
+                                        "sliders",
+                                        "list",
+                                        "grid",
+                                        "dashboard",
+                                        "barChart",
+                                        "pieChart",
+                                        "trendingUp",
+                                        "trendingDown",
+                                        "globe",
+                                        "building",
+                                        "briefcase",
+                                        "map",
+                                        "navigation",
+                                        "message",
+                                        "messages",
+                                        "headphones",
+                                        "help",
+                                        "success",
+                                        "error",
+                                        "alert",
+                                        "warning"
+                                    ],
+                                    "required": false
+                                }
+                            ]
+                        },
+                        {
+                            "label": "Action Button",
+                            "name": "button",
+                            "widget": "object",
+                            "fields": [
+                                {
+                                    "label": "Enabled",
+                                    "name": "enabled",
+                                    "widget": "boolean",
+                                    "default": true
+                                },
+                                {
+                                    "label": "Text",
+                                    "name": "text",
+                                    "widget": "string"
+                                },
+                                {
+                                    "label": "Link",
+                                    "name": "link",
+                                    "widget": "string"
+                                }
+                            ]
+                        },
+                        {
+                            "label": "Cart Button",
+                            "name": "cartButton",
+                            "widget": "object",
+                            "fields": [
+                                {
+                                    "label": "Enabled",
+                                    "name": "enabled",
+                                    "widget": "boolean",
+                                    "default": true
+                                },
+                                {
+                                    "label": "Show Item Count",
+                                    "name": "showCount",
+                                    "widget": "boolean",
+                                    "default": true
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "footer",
+                    "label": "Footer",
+                    "file": "content/sections/footer.json",
+                    "format": "json",
+                    "fields": [
+                        {
+                            "name": "settings",
+                            "label": "Visibility Toggles",
+                            "widget": "object",
+                            "fields": [
+                                {
+                                    "label": "Enabled",
+                                    "name": "enabled",
+                                    "widget": "boolean",
+                                    "default": true
+                                },
+                                {
+                                    "label": "Show Icons",
+                                    "name": "isIconVisible",
+                                    "widget": "boolean",
+                                    "default": true
+                                }
+                            ]
+                        },
+                        {
+                            "label": "Title",
+                            "name": "title",
+                            "widget": "string",
+                            "required": false
+                        },
+                        {
+                            "label": "Subtitle",
+                            "name": "subtitle",
+                            "widget": "string",
+                            "required": false
+                        },
+                        {
+                            "label": "Image / Logo",
+                            "name": "image",
+                            "widget": "image",
+                            "required": false
+                        },
+                        {
+                            "label": "Description",
+                            "name": "description",
+                            "widget": "text",
+                            "required": false
+                        },
+                        {
+                            "label": "Quick Links",
+                            "name": "quickLinks",
+                            "widget": "list",
+                            "fields": [
+                                {
+                                    "label": "Label",
+                                    "name": "label",
+                                    "widget": "string"
+                                },
+                                {
+                                    "label": "URL",
+                                    "name": "url",
+                                    "widget": "string"
+                                },
+                                {
+                                    "label": "Icon",
+                                    "name": "icon",
+                                    "widget": "select",
+                                    "options": [
+                                        "home",
+                                        "shoppingBag",
+                                        "shoppingCart",
+                                        "store",
+                                        "user",
+                                        "users",
+                                        "userPlus",
+                                        "userCheck",
+                                        "settings",
+                                        "search",
+                                        "heart",
+                                        "star",
+                                        "mapPin",
+                                        "phone",
+                                        "mail",
+                                        "menu",
+                                        "circleHelp",
+                                        "info",
+                                        "bell",
+                                        "calendar",
+                                        "clock",
+                                        "check",
+                                        "x",
+                                        "plus",
+                                        "minus",
+                                        "chevronDown",
+                                        "chevronUp",
+                                        "chevronLeft",
+                                        "chevronRight",
+                                        "arrowRight",
+                                        "arrowLeft",
+                                        "arrowUp",
+                                        "arrowDown",
+                                        "externalLink",
+                                        "link",
+                                        "share",
+                                        "send",
+                                        "download",
+                                        "upload",
+                                        "eye",
+                                        "eyeOff",
+                                        "lock",
+                                        "unlock",
+                                        "login",
+                                        "logout",
+                                        "key",
+                                        "shield",
+                                        "shieldCheck",
+                                        "creditCard",
+                                        "wallet",
+                                        "banknote",
+                                        "receipt",
+                                        "tag",
+                                        "tags",
+                                        "package",
+                                        "truck",
+                                        "boxes",
+                                        "dollar",
+                                        "percent",
+                                        "discount",
+                                        "gift",
+                                        "camera",
+                                        "image",
+                                        "video",
+                                        "file",
+                                        "fileText",
+                                        "folder",
+                                        "folderOpen",
+                                        "edit",
+                                        "delete",
+                                        "copy",
+                                        "save",
+                                        "moreHorizontal",
+                                        "moreVertical",
+                                        "filter",
+                                        "sliders",
+                                        "list",
+                                        "grid",
+                                        "dashboard",
+                                        "barChart",
+                                        "pieChart",
+                                        "trendingUp",
+                                        "trendingDown",
+                                        "globe",
+                                        "building",
+                                        "briefcase",
+                                        "map",
+                                        "navigation",
+                                        "message",
+                                        "messages",
+                                        "headphones",
+                                        "help",
+                                        "success",
+                                        "error",
+                                        "alert",
+                                        "warning"
+                                    ],
+                                    "required": false
+                                }
+                            ]
+                        },
+                        {
+                            "label": "Footer Sections Visibility",
+                            "name": "sections",
+                            "widget": "object",
+                            "fields": [
+                                {
+                                    "label": "Quick Links Section",
+                                    "name": "quickLinks",
+                                    "widget": "object",
+                                    "fields": [
+                                        {
+                                            "label": "Enabled",
+                                            "name": "enabled",
+                                            "widget": "boolean",
+                                            "default": true
+                                        },
+                                        {
+                                            "label": "Title",
+                                            "name": "title",
+                                            "widget": "string",
+                                            "required": false
+                                        }
+                                    ]
+                                },
+                                {
+                                    "label": "Contact Section",
+                                    "name": "contact",
+                                    "widget": "object",
+                                    "fields": [
+                                        {
+                                            "label": "Enabled",
+                                            "name": "enabled",
+                                            "widget": "boolean",
+                                            "default": true
+                                        },
+                                        {
+                                            "label": "Title",
+                                            "name": "title",
+                                            "widget": "string",
+                                            "required": false
+                                        }
+                                    ]
+                                },
+                                {
+                                    "label": "Business Hours Section",
+                                    "name": "businessHours",
+                                    "widget": "object",
+                                    "fields": [
+                                        {
+                                            "label": "Enabled",
+                                            "name": "enabled",
+                                            "widget": "boolean",
+                                            "default": true
+                                        },
+                                        {
+                                            "label": "Title",
+                                            "name": "title",
+                                            "widget": "string",
+                                            "required": false
+                                        }
+                                    ]
+                                },
+                                {
+                                    "label": "Social Media Section",
+                                    "name": "social",
+                                    "widget": "object",
+                                    "fields": [
+                                        {
+                                            "label": "Enabled",
+                                            "name": "enabled",
+                                            "widget": "boolean",
+                                            "default": true
+                                        },
+                                        {
+                                            "label": "Title",
+                                            "name": "title",
+                                            "widget": "string",
+                                            "required": false
+                                        }
+                                    ]
+                                },
+                                {
+                                    "label": "Copyright",
+                                    "name": "copyRight",
+                                    "widget": "object",
+                                    "fields": [
+                                        {
+                                            "label": "Enabled",
+                                            "name": "enabled",
+                                            "widget": "boolean",
+                                            "default": true
+                                        },
+                                        {
+                                            "label": "Title",
+                                            "name": "title",
+                                            "widget": "string",
+                                            "required": false
+                                        }
+                                    ]
+                                },
+                                {
+                                    "label": "Site Map",
+                                    "name": "siteMap",
+                                    "widget": "object",
+                                    "fields": [
+                                        {
+                                            "label": "Enabled",
+                                            "name": "enabled",
+                                            "widget": "boolean",
+                                            "default": true
+                                        },
+                                        {
+                                            "label": "Title",
+                                            "name": "title",
+                                            "widget": "string",
+                                            "required": false
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "hero",
+                    "label": "Hero",
+                    "file": "content/sections/hero.json",
+                    "format": "json",
+                    "fields": [
+                        {
+                            "label": "Heading",
+                            "name": "heading",
+                            "widget": "string",
+                            "required": false
+                        },
+                        {
+                            "label": "Sub Heading",
+                            "name": "subHeading",
+                            "widget": "string"
+                        },
+                        {
+                            "label": "Tag Line",
+                            "name": "tagLine",
+                            "widget": "string"
+                        },
+                        {
+                            "label": "Description",
+                            "name": "description",
+                            "widget": "text",
+                            "maxlength": 300
+                        },
+                        {
+                            "label": "Carousel Images",
+                            "name": "carouselImages",
+                            "widget": "list",
+                            "min": 1,
+                            "max": 10,
+                            "fields": [
+                                {
+                                    "label": "Image",
+                                    "name": "image",
+                                    "widget": "image"
+                                },
+                                {
+                                    "label": "Add Link",
+                                    "name": "link",
+                                    "widget": "string",
+                                    "required": false,
+                                    "hint": "Add link internal or external if any"
+                                }
+                            ]
+                        },
+                        {
+                            "label": "Buttons",
+                            "name": "buttons",
+                            "widget": "list",
+                            "fields": [
+                                {
+                                    "label": "Button Type",
+                                    "name": "type",
+                                    "widget": "select",
+                                    "options": [
+                                        {
+                                            "label": "Default",
+                                            "value": "default"
+                                        },
+                                        {
+                                            "label": "Secondary",
+                                            "value": "secondary"
+                                        },
+                                        {
+                                            "label": "Outline",
+                                            "value": "outline"
+                                        },
+                                        {
+                                            "label": "Ghost",
+                                            "value": "ghost"
+                                        },
+                                        {
+                                            "label": "Link",
+                                            "value": "link"
+                                        },
+                                        {
+                                            "label": "Destructive",
+                                            "value": "destructive"
+                                        }
+                                    ],
+                                    "default": "default"
+                                },
+                                {
+                                    "label": "Text",
+                                    "name": "text",
+                                    "widget": "string"
+                                },
+                                {
+                                    "label": "Link",
+                                    "name": "link",
+                                    "widget": "string"
+                                },
+                                {
+                                    "label": "Icon",
+                                    "name": "icon",
+                                    "widget": "select",
+                                    "options": [
+                                        "home",
+                                        "shoppingBag",
+                                        "shoppingCart",
+                                        "store",
+                                        "user",
+                                        "users",
+                                        "userPlus",
+                                        "userCheck",
+                                        "settings",
+                                        "search",
+                                        "heart",
+                                        "star",
+                                        "mapPin",
+                                        "phone",
+                                        "mail",
+                                        "menu",
+                                        "circleHelp",
+                                        "info",
+                                        "bell",
+                                        "calendar",
+                                        "clock",
+                                        "check",
+                                        "x",
+                                        "plus",
+                                        "minus",
+                                        "chevronDown",
+                                        "chevronUp",
+                                        "chevronLeft",
+                                        "chevronRight",
+                                        "arrowRight",
+                                        "arrowLeft",
+                                        "arrowUp",
+                                        "arrowDown",
+                                        "externalLink",
+                                        "link",
+                                        "share",
+                                        "send",
+                                        "download",
+                                        "upload",
+                                        "eye",
+                                        "eyeOff",
+                                        "lock",
+                                        "unlock",
+                                        "login",
+                                        "logout",
+                                        "key",
+                                        "shield",
+                                        "shieldCheck",
+                                        "creditCard",
+                                        "wallet",
+                                        "banknote",
+                                        "receipt",
+                                        "tag",
+                                        "tags",
+                                        "package",
+                                        "truck",
+                                        "boxes",
+                                        "dollar",
+                                        "percent",
+                                        "discount",
+                                        "gift",
+                                        "camera",
+                                        "image",
+                                        "video",
+                                        "file",
+                                        "fileText",
+                                        "folder",
+                                        "folderOpen",
+                                        "edit",
+                                        "delete",
+                                        "copy",
+                                        "save",
+                                        "moreHorizontal",
+                                        "moreVertical",
+                                        "filter",
+                                        "sliders",
+                                        "list",
+                                        "grid",
+                                        "dashboard",
+                                        "barChart",
+                                        "pieChart",
+                                        "trendingUp",
+                                        "trendingDown",
+                                        "globe",
+                                        "building",
+                                        "briefcase",
+                                        "map",
+                                        "navigation",
+                                        "message",
+                                        "messages",
+                                        "headphones",
+                                        "help",
+                                        "success",
+                                        "error",
+                                        "alert",
+                                        "warning"
+                                    ],
+                                    "required": false
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "features",
+                    "label": "Features",
+                    "file": "content/sections/features.json",
+                    "format": "json",
+                    "fields": [
+                        {
+                            "label": "Title",
+                            "name": "title",
+                            "widget": "string"
+                        },
+                        {
+                            "label": "Description",
+                            "name": "description",
+                            "widget": "text"
+                        },
+                        {
+                            "label": "Features List",
+                            "name": "features",
+                            "widget": "list",
+                            "fields": [
+                                {
+                                    "label": "Title",
+                                    "name": "title",
+                                    "widget": "string"
+                                },
+                                {
+                                    "label": "Description",
+                                    "name": "description",
+                                    "widget": "string"
+                                },
+                                {
+                                    "label": "Icon",
+                                    "name": "icon",
+                                    "widget": "select",
+                                    "options": [
+                                        "home",
+                                        "shoppingBag",
+                                        "shoppingCart",
+                                        "store",
+                                        "user",
+                                        "users",
+                                        "userPlus",
+                                        "userCheck",
+                                        "settings",
+                                        "search",
+                                        "heart",
+                                        "star",
+                                        "mapPin",
+                                        "phone",
+                                        "mail",
+                                        "menu",
+                                        "circleHelp",
+                                        "info",
+                                        "bell",
+                                        "calendar",
+                                        "clock",
+                                        "check",
+                                        "x",
+                                        "plus",
+                                        "minus",
+                                        "chevronDown",
+                                        "chevronUp",
+                                        "chevronLeft",
+                                        "chevronRight",
+                                        "arrowRight",
+                                        "arrowLeft",
+                                        "arrowUp",
+                                        "arrowDown",
+                                        "externalLink",
+                                        "link",
+                                        "share",
+                                        "send",
+                                        "download",
+                                        "upload",
+                                        "eye",
+                                        "eyeOff",
+                                        "lock",
+                                        "unlock",
+                                        "login",
+                                        "logout",
+                                        "key",
+                                        "shield",
+                                        "shieldCheck",
+                                        "creditCard",
+                                        "wallet",
+                                        "banknote",
+                                        "receipt",
+                                        "tag",
+                                        "tags",
+                                        "package",
+                                        "truck",
+                                        "boxes",
+                                        "dollar",
+                                        "percent",
+                                        "discount",
+                                        "gift",
+                                        "camera",
+                                        "image",
+                                        "video",
+                                        "file",
+                                        "fileText",
+                                        "folder",
+                                        "folderOpen",
+                                        "edit",
+                                        "delete",
+                                        "copy",
+                                        "save",
+                                        "moreHorizontal",
+                                        "moreVertical",
+                                        "filter",
+                                        "sliders",
+                                        "list",
+                                        "grid",
+                                        "dashboard",
+                                        "barChart",
+                                        "pieChart",
+                                        "trendingUp",
+                                        "trendingDown",
+                                        "globe",
+                                        "building",
+                                        "briefcase",
+                                        "map",
+                                        "navigation",
+                                        "message",
+                                        "messages",
+                                        "headphones",
+                                        "help",
+                                        "success",
+                                        "error",
+                                        "alert",
+                                        "warning"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

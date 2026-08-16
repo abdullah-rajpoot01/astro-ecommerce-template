@@ -1,15 +1,20 @@
 ---
 import "@/styles/global.css"
+import Footer from "@/components/navigation/footer"
+import Navbar from "@/components/navigation/navbar-main"
+import { ClientRouter } from "astro:transitions" // [1, 2]
 ---
 
 <html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <title>Astro App</title>
+    <title>Elite Store</title>
+    <ClientRouter />
   </head>
   <body>
-    <slot />
+    <Navbar client:load />
+      <slot />
+    <Footer />
   </body>
 </html>

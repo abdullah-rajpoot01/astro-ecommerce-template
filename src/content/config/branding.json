@@ -1,0 +1,11 @@
+{
+    "colors": {
+        "primary": "#2563EB",
+        "secondary": "#F59E0B",
+        "accent": "#10B981"
+    },
+    "font": {
+        "heading": "Inter",
+        "body": "Inter"
+    }
+}

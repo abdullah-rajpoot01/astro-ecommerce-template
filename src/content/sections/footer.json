@@ -1,0 +1,63 @@
+{
+  "settings": {
+    "enabled": true,
+    "isIconVisible": true
+  },
+  "title": "Elite Store",
+  "subtitle": "Online Store",
+  "image": "https://islamabad-images-1.pages.dev/logos/201948.jpg",
+  "description": "Elite Store offers quality products at great prices with fast delivery across Pakistan.",
+  "quickLinks": [
+    {
+      "label": "Home",
+      "url": "/",
+      "icon": "home"
+    },
+    {
+      "label": "Products",
+      "url": "/products",
+      "icon": "shoppingBag"
+    },
+    {
+      "label": "Categories",
+      "url": "/categories",
+      "icon": "tags"
+    },
+    {
+      "label": "Testimonials",
+      "url": "/testimonials",
+      "icon": "users"
+    },
+    {
+      "label": "About Us",
+      "url": "/about-us",
+      "icon": "user"
+    }
+  ],
+  "sections": {
+    "quickLinks": {
+      "enabled": true,
+      "title": "Quick Links"
+    },
+    "contact": {
+      "enabled": true,
+      "title": "Contact"
+    },
+    "businessHours": {
+      "enabled": true,
+      "title": "Business Hours"
+    },
+    "social": {
+      "enabled": true,
+      "title": "Social"
+    },
+    "copyRight": {
+      "enabled": true,
+      "title": ""
+    },
+    "siteMap": {
+      "enabled": true,
+      "title": ""
+    }
+  }
+}

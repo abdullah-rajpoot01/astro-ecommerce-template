@@ -1,0 +1,36 @@
+{
+  "title": "Why Choose Us",
+  "description": "Discover trusted real estate services with Elite Store in Lahore.",
+  "features": [
+    {
+      "title": "Wide Property Selection",
+      "description": "Browse a diverse collection of residential and commercial properties that match different budgets and lifestyles.",
+      "icon": "home"
+    },
+    {
+      "title": "Verified Listings",
+      "description": "We showcase carefully verified property listings to help you make informed and confident decisions.",
+      "icon": "user"
+    },
+    {
+      "title": "Local Market Expertise",
+      "description": "Benefit from our in-depth knowledge of neighborhoods, market trends, and investment opportunities.",
+      "icon": "bell"
+    },
+    {
+      "title": "Buying & Selling Support",
+      "description": "From the initial search to the final paperwork, we provide professional guidance throughout the entire process.",
+      "icon": "mapPin"
+    },
+    {
+      "title": "Rental Solutions",
+      "description": "Whether you're looking to rent a property or list one for rent, we help connect the right tenants and landlords.",
+      "icon": "store"
+    },
+    {
+      "title": "Dedicated Client Service",
+      "description": "Our experienced team is committed to delivering responsive communication and personalized real estate solutions.",
+      "icon": "settings"
+    }
+  ]
+}

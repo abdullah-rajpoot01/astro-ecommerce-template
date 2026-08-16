@@ -1,0 +1,16 @@
+{
+  "id": "prod-004",
+  "name": "RGB Keyboard",
+  "category": "cat-001",
+  "price": 159,
+  "comparePrice": 199,
+  "stock": null,
+  "saleLable": "",
+  "images": [
+    "https://assets.shadcnstore.com/shadcnstore.com/stock/e-commerce/airpods-pro-3rd-gen.800w.092d26.avif"
+  ],
+  "description": "Mechanical RGB backlit keyboard",
+
+  "featured": true,
+  "status": "published"
+}

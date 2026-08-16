@@ -1,0 +1,13 @@
+{
+    "name": "Elite Store",
+    "tagline": "Quality Products at Affordable Prices",
+    "description": "Elite Store offers premium fashion, electronics, and lifestyle products with fast delivery across Pakistan.",
+    "logo": "https://islamabad-images-1.pages.dev/logos/201948.jpg",
+    "favicon": "/store/favicon.webp",
+    "banner": "/store/banner.webp",
+    "currency": {
+        "code": "PKR",
+        "symbol": "Rs",
+        "position": "before"
+    }
+}

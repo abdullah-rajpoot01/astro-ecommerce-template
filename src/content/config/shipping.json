@@ -1,0 +1,14 @@
+{
+  "freeShippingThreshold": 5000,
+  "estimatedDelivery": "3-5 Business Days",
+  "shippingMethods": [
+    {
+      "name": "Standard Delivery",
+      "price": 250
+    },
+    {
+      "name": "Express Delivery",
+      "price": 500
+    }
+  ]
+}

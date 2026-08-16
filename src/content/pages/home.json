@@ -1,0 +1,33 @@
+{
+  "categoriesSection": {
+    "heading": "Shop by Category",
+    "subHeading": "Discover products across our most popular categories",
+    "maxItems": 6,
+    "btnTxt": "View All Categories",
+    "design": "default"
+  },
+  "productsSection": {
+    "heading": "Today's Best Deals For You!",
+    "subHeading": "Everything You Need, All in One Place.",
+    "maxItems": 6,
+    "btnTxt": "View All Products",
+    "design": "default"
+  },
+  "setting": {
+    "heroEnabled": true,
+    "categoriesEnabled": true,
+    "productsEnabled": true,
+    "featuresEnabled": true,
+    "testimonialsEnabled": true
+  },
+  "featuresSection": {
+    "heading": "Why Choose Us",
+    "subHeading": "Discover trusted real estate services with Elite Store in Lahore.",
+    "design": "default"
+  },
+  "whySection": {
+    "heading": "Why Choose Us",
+    "subHeading": "Discover trusted real estate services with Elite Store in Lahore.",
+    "design": "default"
+  }
+}

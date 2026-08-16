@@ -1,0 +1,17 @@
+{
+  "id": "prod-003",
+  "name": "Laptop Pro",
+  "category": "cat-001",
+  "price": 1299,
+  "comparePrice": 1499,
+  "stock": null,
+  "saleLable": "",
+  "images": [
+    "https://assets.shadcnstore.com/shadcnstore.com/stock/e-commerce/classic-white-sneakers.500w.c5398d.avif"
+  ],
+  "description": "Power and performance redefined",
+  "variants": [],
+  "addOns": [],
+  "featured": true,
+  "status": "published"
+}

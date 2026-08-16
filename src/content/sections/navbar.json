@@ -1,0 +1,45 @@
+{
+  "settings": {
+    "enabled": true,
+    "isIconVisible": true
+  },
+  "title": "Elite Store",
+  "subtitle": "Online Store",
+  "image": "https://islamabad-images-1.pages.dev/logos/201948.jpg",
+  "quickLinks": [
+    {
+      "label": "Home",
+      "url": "/",
+      "icon": "home"
+    },
+    {
+      "label": "Products",
+      "url": "/products",
+      "icon": "shoppingBag"
+    },
+    {
+      "label": "Categories",
+      "url": "/categories",
+      "icon": "tags"
+    },
+    {
+      "label": "Blogs",
+      "url": "/blogs",
+      "icon": "users"
+    },
+    {
+      "label": "Testimonials",
+      "url": "/testimonials",
+      "icon": "user"
+    }
+  ],
+  "button": {
+    "enabled": true,
+    "text": "Contact Us",
+    "link": "tel:+923046954705"
+  },
+  "cartButton": {
+    "enabled": true,
+    "showCount": true
+  }
+}

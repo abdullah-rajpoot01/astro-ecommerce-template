@@ -1,0 +1,30 @@
+{
+  "heading": "Elite Store",
+  "subHeading": "Everything You Need, All in One Place.",
+  "tagLine": "Discover Amazing Products.",
+  "description": "Discover quality products at great prices. Shop our collection, find your favorites, and enjoy a simple and convenient shopping experience.",
+  "carouselImages": [
+    {
+      "image": "https://assets.shadcnstore.com/shadcnstore.com/stock/e-commerce/fashion-model-wearing-latest-collection.800w.4a9a22.avif",
+      "link": ""
+    },
+    {
+      "image": "https://assets.shadcnstore.com/shadcnstore.com/stock/e-commerce/nike-zig-kinetica-3-side-view.800w.e023db.avif",
+      "link": ""
+    }
+  ],
+  "buttons": [
+    {
+      "type": "default",
+      "text": "Shop",
+      "link": "/products",
+      "icon": "shoppingBag"
+    },
+    {
+      "type": "secondary",
+      "text": "Explore Categories",
+      "link": "/categories",
+      "icon": "tags"
+    }
+  ]
+}

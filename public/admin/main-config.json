@@ -1,0 +1,28 @@
+{
+  "$schema": "https://unpkg.com/@sveltia/cms@0.170.5/schema/sveltia-cms.json",
+  "backend": {
+    "name": "github",
+    "repo": "abdullah-rajpoot01/my-agency"
+  },
+  "media_folder": "/public/media",
+  "public_folder": "/media",
+  "app_title": "Abdullah Rajpoot",
+  "logo": {
+    "show_in_header": false,
+    "src": "/admin/my-name-logo.png"
+  },
+  "media_libraries": {
+    "default": {
+      "config": {
+        "max_file_size": 254800,
+        "transformations": {
+          "raster_image": {
+            "format": "webp",
+            "quality": 80
+          }
+        }
+      }
+    }
+  },
+  "collections": []
+}

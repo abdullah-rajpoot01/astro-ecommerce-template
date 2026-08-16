@@ -1,0 +1,43 @@
+{
+    "$schema": "https://unpkg.com/@sveltia/cms@0.170.5/schema/sveltia-cms.json",
+    "collections": [
+        {
+            "name": "categories",
+            "label": "Categories",
+            "folder": "content/categories",
+            "create": true,
+            "slug": "{{name}}",
+            "extension": "json",
+            "format": "json",
+            "limit": 100,
+            "fields": [
+                {
+                    "name": "id",
+                    "widget": "hidden",
+                    "default": "{{uuid_short}}"
+                },
+                {
+                    "label": "Category Name",
+                    "name": "name",
+                    "widget": "string"
+                },
+                {
+                    "label": "Category Image",
+                    "name": "image",
+                    "widget": "image"
+                },
+                {
+                    "label": "Description",
+                    "name": "description",
+                    "widget": "text"
+                },
+                {
+                    "label": "Featured",
+                    "name": "featured",
+                    "widget": "boolean",
+                    "default": false
+                }
+            ]
+        }
+    ]
+}
