@@ -1,38 +1,40 @@
 ---
 // 1. Data Layer Import (Your server-side utility function)
-import { getAllProducts } from "@/utils/products"; // Adjust this path to match your file structure
+import { getAllProducts } from "@/utils/products" // Adjust this path to match your file structure
 
 // 2. React UI Presenter Import
-import Layout from "@/layouts/main.astro";
-import ProductPage from "@/components/products/product-page";
-import ProductCard1 from "@/components/home/featured-products";
+import Layout from "@/layouts/main.astro"
+import ProductPage from "@/components/product/shell.astro"
+import ProductCard1 from "@/components/home/featured-products"
+import { getCategoryById } from "@/utils/categories"
 
 // 3. Define the path map using Astro's dynamic parameters engine
 export async function getStaticPaths() {
   // Fetch all your real products from your backend utility layer
-  const products =  getAllProducts();
+  const products = getAllProducts()
 
   // Map over the items to generate static routes automatically
   return products.map((product) => {
     return {
       // The name of this param key must perfectly match your filename: [id].astro
-      params: { 
-        id: String(product.id) 
+      params: {
+        id: String(product.id),
       },
       // Pass down the entire product object as props to the server-rendering process
-      props: { 
-        product 
-      }
-    };
-  });
+      props: {
+        product,
+      },
+    }
+  })
 }
 
 // 4. Capture the generated props on the active rendering page cycle
-const { product } = Astro.props;
+const { product } = Astro.props
+const category = getCategoryById(product.category)
 ---
 
 <Layout title={product.name}>
   <!-- Pass the clean product object down into your React interface layer -->
-  <ProductPage product={product} client:load />
-    <ProductCard1 />
+  <ProductPage product={product} category={category} client:load />
+  <ProductCard1 />
 </Layout>

@@ -7,9 +7,37 @@
   "stock": null,
   "saleLable": "",
   "images": [
+    "https://assets.shadcnstore.com/shadcnstore.com/stock/e-commerce/dell-xps-13-plus.800w.0ef45d.avif",
+    "https://assets.shadcnstore.com/shadcnstore.com/stock/e-commerce/dell-xps-13-plus.800w.0ef45d.avif",
+    "https://assets.shadcnstore.com/shadcnstore.com/stock/e-commerce/dell-xps-13-plus.800w.0ef45d.avif",
+    "https://assets.shadcnstore.com/shadcnstore.com/stock/e-commerce/dell-xps-13-plus.800w.0ef45d.avif",
     "https://assets.shadcnstore.com/shadcnstore.com/stock/e-commerce/dell-xps-13-plus.800w.0ef45d.avif"
   ],
   "description": "144Hz refresh rate display",
+  "variants": [
+    {
+      "id": "9c4be5fe492d",
+      "sku": "SKU-41",
+      "price": 300,
+      "comparePrice": 350,
+      "stock": 150,
+      "options": {
+        "Color": "Black",
+        "Size": "42"
+      }
+    },
+    {
+      "id": "c3158584a906",
+      "sku": "SKU-42",
+      "price": 350,
+      "comparePrice": 400,
+      "stock": 50,
+      "options": {
+        "Color": "Blue",
+        "Size": "38"
+      }
+    }
+  ],
   "featured": true,
   "status": "published"
 }

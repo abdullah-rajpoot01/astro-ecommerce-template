@@ -37,7 +37,7 @@ function CategoriesCard1({ categories = [], maxCategories }: CategoriesCard1Prop
                             <p className='mb-3 text-sm text-white/90'>{category.description}</p>
                             <div className='flex items-center justify-between'>
                                 <span className='text-sm'>{category.count} items</span>
-                                <a href={`/categories/${category.id}`}>
+                                <a href={`/categories/${category.id}/1`}>
                                     <div
 
                                         className={cn(buttonVariants({ variant: "secondary", size: "sm" }), "h-8 px-3 text-xs cursor-pointer border-white/30 bg-white/20 text-white backdrop-blur-sm hover:bg-white/30")}

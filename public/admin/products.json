@@ -4,7 +4,7 @@
         {
             "name": "products",
             "label": "Products",
-            "folder": "content/products",
+            "folder": "src/content/products",
             "create": true,
             "slug": "{{slug}}",
             "extension": "json",

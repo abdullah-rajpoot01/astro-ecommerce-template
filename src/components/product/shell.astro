@@ -1,0 +1,41 @@
+---
+// src/components/products/ProductOverviewShell.astro
+import type { Product } from '@/types/product'
+import type { Category } from '@/types/categories'
+import ProductInfoStatic from './product-static-info'
+import ProductCarouselIsland from './images'
+import ProductSidebarIsland from './variants-addons'
+import ProductSpecsStatic from './features-specification'
+
+
+interface Props {
+  product: Product
+  category: Category | null
+}
+
+const { product, category } = Astro.props
+---
+
+<section class='mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8 py-20'>
+  <div class='grid grid-cols-1 gap-6 py-4 lg:grid-cols-2 lg:gap-8 lg:py-6 xl:grid-cols-3 xl:gap-12 xl:py-12'>
+
+    <!-- Column 1: Static Info Text -->
+    <div>
+      <ProductInfoStatic product={product} category={category} />
+    </div>
+
+    <!-- Column 2: Client Image Slider -->
+    <div class='row-span-2 row-start-1 lg:col-start-2'>
+      <ProductCarouselIsland client:load product={product} />
+    </div>
+
+    <!-- Column 3: Client Options Sidebar -->
+    <div>
+      <ProductSidebarIsland client:load product={product} />
+    </div>
+
+  </div>
+
+  <!-- Row 2: Full-Width Static Tech Details Panel -->
+  <ProductSpecsStatic product={product} />
+</section>

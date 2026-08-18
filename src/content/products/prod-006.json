@@ -1,17 +1,122 @@
 {
-  "id": "prod-006",
-  "name": "Smartphone Pro",
+  "id": "prod-apex-001",
+  "name": "Apex Wireless Gaming Headphones",
   "category": "cat-001",
-  "price": 999,
-  "comparePrice": 1099,
-  "stock": null,
-  "saleLable": "",
+  "price": 149,
+  "comparePrice": 199,
+  "stock": 45,
+  "saleLable": "Save $50",
   "images": [
     "https://assets.shadcnstore.com/shadcnstore.com/stock/e-commerce/premium-laptop.800w.ce2dc0.avif"
   ],
-  "description": "Pro camera system, ProMotion",
-  "variants": [],
-  "addOns": [],
+  "description": "Experience zero-latency immersive spatial soundscapes with premium dynamic memory foam acoustic cushioning and active hybrid noise cancellation properties.",
+  "variants": [
+    {
+      "id": "v-apex-blk-sml",
+      "sku": "APX-HD-BLK-S",
+      "price": 150,
+      "comparePrice": 200,
+      "stock": 15,
+      "options": {
+        "Color": "Matte Black",
+        "Size": "Standard"
+      }
+    },
+    {
+      "id": "v-apex-blk-lrg",
+      "sku": "APX-HD-BLK-L",
+      "price": 159,
+      "comparePrice": 209,
+      "stock": 12,
+      "options": {
+        "Color": "Matte Black",
+        "Size": "Large XL"
+      }
+    },
+    {
+      "id": "v-apex-wht-sml",
+      "sku": "APX-HD-WHT-S",
+      "price": 149,
+      "comparePrice": 199,
+      "stock": 8,
+      "options": {
+        "Color": "Arctic White",
+        "Size": "Standard"
+      }
+    },
+    {
+      "id": "v-apex-wht-lrg",
+      "sku": "APX-HD-WHT-L",
+      "price": 159,
+      "comparePrice": 209,
+      "stock": 0,
+      "options": {
+        "Color": "Arctic White",
+        "Size": "Large XL"
+      }
+    },
+    {
+      "id": "v-apex-gld-lrg",
+      "sku": "APX-HD-GLD-L",
+      "price": 179,
+      "comparePrice": 229,
+      "stock": 10,
+      "options": {
+        "Color": "Limited Edition Gold",
+        "Size": "Large XL"
+      }
+    }
+  ],
+  "addOns": [
+    {
+      "id": "add-case-01",
+      "name": "Hard Shell EVA Carrying Case",
+      "required": false,
+      "price": 19
+    },
+    {
+      "id": "add-warranty-023",
+      "name": "2-Year Accidental Damage Protection Plan",
+      "required": false,
+      "price": 25
+    },
+    {
+      "id": "add-warranty-024",
+      "name": "2-Year Accidental Damage Protection Plan",
+      "required": false,
+      "price": 25
+    },
+    {
+      "id": "add-warranty-025",
+      "name": "2-Year Accidental Damage Protection Plan",
+      "required": false,
+      "price": 25
+    }
+  ],
+  "features": [
+    "Ultra-low latency 2.4GHz wireless connection",
+    "Active Hybrid Noise Cancellation (ANC) up to 40dB",
+    "Hi-Res Spatial Audio certified dynamic drivers",
+    "Up to 60 hours of continuous playback on a single charge"
+  ],
+  "specifications": [
+    {
+      "key": "Driver Size",
+      "value": "50mm Neodymium"
+    },
+    {
+      "key": "Frequency Response",
+      "value": "10Hz - 40kHz"
+    },
+    {
+      "key": "Connectivity",
+      "value": "Bluetooth 5.3 & 2.4GHz Wireless Dongle"
+    },
+    {
+      "key": "Charging Port",
+      "value": "USB Type-C Fast Charge"
+    }
+  ],
   "featured": true,
   "status": "published"
 }

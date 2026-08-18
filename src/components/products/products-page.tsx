@@ -1,9 +1,10 @@
 import ProductsCard1 from '@/components/products/products-card';
+import type { Product } from '@/types/product';
 import { getAllProducts } from '@/utils/products'
 
 
-export function ProductsPage() {
-  const products = getAllProducts();
+export function ProductsPage({ passedProducts }: { passedProducts: Product[] }) {
+  const products = passedProducts ? passedProducts : getAllProducts();
 
   return (
     <section className='py-24'>

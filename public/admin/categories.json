@@ -4,7 +4,7 @@
         {
             "name": "categories",
             "label": "Categories",
-            "folder": "content/categories",
+            "folder": "src/content/categories",
             "create": true,
             "slug": "{{name}}",
             "extension": "json",

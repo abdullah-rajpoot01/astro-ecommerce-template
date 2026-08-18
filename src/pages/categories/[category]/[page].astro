@@ -1,0 +1,58 @@
+---
+// src/pages/categories/[category]/[page].astro
+import type { GetStaticPaths, Page } from "astro";
+import type { Product } from "@/types/product";
+import ProductsPage from "@/components/products/products-page"; 
+import Layout from "@/layouts/main.astro";
+import { getAllProducts } from "@/utils/products";
+import { getAllCategories } from "@/utils/categories"; 
+import PaginationWithPrimaryButton from "@/components/pagination-02";
+
+export const getStaticPaths: GetStaticPaths = async ({ paginate }) => {
+  const allCategories = getAllCategories();
+  const allProducts = getAllProducts();
+  
+  const publishedProducts = allProducts.filter(item => item.status === 'published');
+
+  return allCategories.flatMap((category) => {
+    // 1. Fixed typo: Match product.category to the category.id
+    const categoryProducts = publishedProducts.filter(
+      (product) => product.category === category.id
+    );
+
+    // 2. Fix the error: Force String conversion on the ID parameter
+    return paginate(categoryProducts, {
+      params: { category: String(category.id) }, 
+      pageSize: 3,
+    });
+  });
+};
+
+interface Props {
+  page: Page<Product>;
+}
+
+const { page } = Astro.props;
+const { category } = Astro.params;
+
+const productsOnThisPage = page.data;
+const baseUrl = `/categories/${category}`;
+
+const paginationInfo = {
+  currentPage: page.currentPage,
+  lastPage: page.lastPage,
+  hasNext: typeof page.url.next === "string",
+  hasPrev: typeof page.url.prev === "string",
+  nextUrl: page.url.next ? `${baseUrl}/${page.currentPage + 1}` : undefined,
+  prevUrl: page.url.prev ? `${baseUrl}/${page.currentPage - 1}` : undefined,
+};
+console.log(paginationInfo)
+---
+
+<Layout title={`Category: ${category}`}>
+  <ProductsPage 
+    passedProducts={productsOnThisPage} 
+  />
+  <PaginationWithPrimaryButton   baseUrl={`/categories/${category}`} 
+ pagination={paginationInfo} />
+</Layout>

@@ -21,7 +21,7 @@ const Footer = () => {
             <a href={`/`} className="flex   gap-3">
 
               <div className="relative w-20 flex justify-center items-center aspect-square shadow-lg border rounded  border-foreground/80 overflow-hidden">
-                <img src={image || store.logo} className="w-full h-full object-cover" /> 
+                <img alt="site-logo" src={image || store.logo} className="w-full h-full object-cover" /> 
               </div>
 
 

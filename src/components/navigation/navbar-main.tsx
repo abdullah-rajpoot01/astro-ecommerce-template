@@ -20,7 +20,7 @@ const Navbar = () => {
         <a href={`/`} className="flex items-center gap-3">
 
           <div className="relative w-10 h-10 flex justify-center items-center aspect-square  shadow-lg border rounded  border-foreground/80 overflow-hidden">
-            <img src={image || store.logo} className="w-full h-full" />
+            <img alt="site-logo" src={image || store.logo} className="w-full h-full" />
           </div>
 
 

@@ -58,3 +58,15 @@ console.log(productCounts)
     count: productCounts.get(category.id) ?? 0,
   }));
 }
+
+
+export function getCategoryById(id: string): Category | null {
+  const allCategories = getAllCategories();
+  
+  // Find the first category matching the ID (safely handling number/string mismatches)
+  const matchedCategory = allCategories.find(
+    (category) => String(category.id) === String(id)
+  );
+
+  return matchedCategory || null;
+}
